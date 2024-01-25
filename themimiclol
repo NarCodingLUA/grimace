@@ -79,6 +79,10 @@ tab.newButton("Escape Dodomeki", "press after doing bells", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3879.3252, -132.975021, -2292.48608, -0.435672283, 0, 0.900105357, 0, 1, 0, -0.900105357, 0, -0.435672283)
 end)
 
-tab.newButton("Shinigami test", "test", function()
+tab.newButton("Shinigami Chase", "Beats Game", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2717.091064453125, 172.54824829101562, 8059.78955078125)
+end)
+
+tab.newButton("Shinigami Portal", "Teleports to end", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1747.89697265625, 88.25239562988281, 7773.380859375)
 end)
