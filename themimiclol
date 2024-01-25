@@ -1,0 +1,80 @@
+local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("The Mimic B2C3", "Default")
+
+local tab = DrRayLibrary.newTab("Main Scripts", "11779135775")
+
+tab.newButton("Fly", "Simple fly UI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+tab.newButton("Noclip", "Noclip UI with toggle", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GEJVTSW3"))()
+end)
+
+tab.newButton("Walkspeed", "Speed 27", function()
+    getgenv().WalkSpeed = true
+ 
+    while WalkSpeed == true do
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 27
+    wait()
+end
+end)
+
+tab.newButton("NoFog", "Removes Fog", function()
+while true do
+wait()
+game.Lighting.FogEnd = 1000000
+wait()
+end
+end)
+
+tab.newButton("Fullbright", "Gives Fullbright", function()
+local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
+local tab = DrRayLibrary.newTab("TPs", "11779135775")
+
+tab.newButton("Snowy Hell B2C3", "Teleports to Snowy Hell", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1245.6499, 7.51562405, -4272.28125, -0.254058152, 0, -0.967188954, 0, 1, 0, 0.967188954, 0, -0.254058152)
+end)
+
+tab.newButton("Ring part", "Teleports to Dodomeki's part", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-327.195587, 6.58524799, -1065.61816, 0.997801781, 0, -0.0662690401, 0, 1, 0, 0.0662690401, 0, 0.997801781)
+end)
+
+tab.newButton("Bell Number #1", "nar on top", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-437.633392, 9.04072189, -1367.59485, -0.479005367, 0, -0.877811968, 0, 1, 0, 0.877811968, 0, -0.479005367)
+end)
+
+tab.newButton("Bell Number #2", "nar on top", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-805.942261, 12.5525513, -1442.32629, -0.996825695, 0, 0.0796151906, 0, 1, 0, -0.0796151906, 0, -0.996825695)
+end)
+
+tab.newButton("Bell Number #3", "nar on top", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-819.554504, 19.4639091, -1742.73132, -0.525159836, 0, -0.851003647, 0, 1, 0, 0.851003647, 0, -0.525159836)
+end)
+
+tab.newButton("Escape Dodomeki", "press after doing bells", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3879.3252, -132.975021, -2292.48608, -0.435672283, 0, 0.900105357, 0, 1, 0, -0.900105357, 0, -0.435672283)
+end)
