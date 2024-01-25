@@ -80,6 +80,5 @@ tab.newButton("Escape Dodomeki", "press after doing bells", function()
 end)
 
 tab.newButton("Shinigami test", "test", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2717.091064453125, 172.54824829101562, 8059.78955078125
-)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2717.091064453125, 172.54824829101562, 8059.78955078125)
 end)
